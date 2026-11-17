@@ -12,7 +12,7 @@
 
 [浏览器插件](https://github.com/ChaoJiDuiBiao/cjdb-web-crawler) · [采集与管理端](https://github.com/ChaoJiDuiBiao/cjdb-collectors)
 
-**视频转写与摘要**｜ffmpeg 抽音频，FunASR 出带标点的中文，全程本地跑，不上传云端。转写稿再压成结构化条目，写进 Obsidian Base，供后面的选题聚类和账号拆解用。这一步的难点是保真，不能让模型替你重新创作一遍。
+**视频转写与摘要**｜ffmpeg 抽音频，FunASR 出带标点的中文，全程本地跑，不上传云端。转写稿再压成结构化条目，写进 Obsidian Base，供后面的选题聚类和账号拆解用。
 
 这条链路上攒了近千条对标作品。
 
@@ -30,10 +30,6 @@
 | [get-claude-in-china](https://github.com/sobadgirl/get-claude-in-china) | 不想自己折腾的，看这个 |
 
 想自己动手，按教程一步步来。想省事，直接看最后一个。
-
-## 底子
-
-Python 出身，写 Django、DRF、FastAPI，数据库常用 PostgreSQL 加 PostGIS。采集插件是 TypeScript 写的。现在大部分时间花在 AI 工作流和数据链路上。
 
 ## 联系
 
