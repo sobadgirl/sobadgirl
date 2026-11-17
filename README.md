@@ -1,38 +1,33 @@
 # 陈斌
 
-把散落的内容变成能用的数据，再把 AI 接进这条链路。
+平时主要做两件事：给内容团队做数据采集工具，以及帮国内重度用户把满血版 Claude 稳稳当当地落地到本机工作流里。
 
-## 采集
+## 1. 国内稳定使用 Claude（实操系列与原生环境部署）
 
-**抄级对标**｜给内容研究者做的一套采集工具。
+现在在国内长期用 Claude，光靠挂个普通节点已经行不通了：邮箱属性、网络纯净度、本机历史残留、支付渠道四个环节只要有一处踩坑，账号就容易被清退或连坐。
 
-浏览器插件抓小红书和抖音的搜索结果、作品正文、评论和作者信息，一键存到 Notion 数据库、飞书多维表格，或者本地 CSV / Markdown。手动触发，不做自动化轮询，所以不会把账号跑死。
+我把实测有效的经验、自检工具以及市面上 6 种主流方案（含海外 VPS、远程 Mac Mini 与本机部署）的对比拆成了下面四个公开仓库：
 
-配一个采集与管理端，把抖音、小红书、公众号、视频号的对标账号统一管起来。
-
-[浏览器插件](https://github.com/ChaoJiDuiBiao/cjdb-web-crawler) · [采集与管理端](https://github.com/ChaoJiDuiBiao/cjdb-collectors)
-
-**视频转写与摘要**｜ffmpeg 抽音频，FunASR 出带标点的中文，全程本地跑，不上传云端。转写稿再压成结构化条目，写进 Obsidian Base，供后面的选题聚类和账号拆解用。
-
-这条链路上攒了近千条对标作品。
-
-## Claude 在国内怎么稳定用
-
-2026 年卡人的不是技术，是四个环节的联合校验：邮箱属性、网络纯净度、设备历史痕迹、支付渠道。任何一环不达标，其余三环做得再好都会被打回原点。
-
-大部分教程只讲一环。这四个仓库把四环串起来。
-
-| 仓库 | 解决什么 |
+| 仓库 | 主要帮你解决什么问题 |
 |---|---|
-| [use-claude-in-china](https://github.com/sobadgirl/use-claude-in-china) | 从零到能用，每一步怎么操作 |
-| [claude-fangfen](https://github.com/sobadgirl/claude-fangfen) | 什么行为会炸，为什么炸 |
-| [awesome-claude-cn](https://github.com/sobadgirl/awesome-claude-cn) | 中文圈资源合集，附一份环境体检表 |
-| [get-claude-in-china](https://github.com/sobadgirl/get-claude-in-china) | 不想自己折腾的，看这个 |
+| **[get-claude-in-china](https://github.com/sobadgirl/get-claude-in-china)** | **市面上 6 种用法深度对比 + 1 对 1 本机原生环境整包部署服务（省心首选）** |
+| **[use-claude-in-china](https://github.com/sobadgirl/use-claude-in-china)** | 想自己动手折腾？从旧机清痕、美区 Apple ID 免税州到礼品卡内购的完整步骤 |
+| **[claude-fangfen](https://github.com/sobadgirl/claude-fangfen)** | 账号为什么突然被封？四维联合校验、72 小时观察期与连坐止损排查手册 |
+| **[awesome-claude-cn](https://github.com/sobadgirl/awesome-claude-cn)** | 开号前必跑的 4 个环境小测试、终端一键只读自检脚本与精选中文资料 |
 
-想自己动手，按教程一步步来。想省事，直接看最后一个。
+> [!TIP]
+> **不想花几天时间自己试错踩坑？**
+> 如果你想省心、无痛地在自己电脑和手机上长期稳定用上官方满血 Claude，可以直接看 **[get-claude-in-china](https://github.com/sobadgirl/get-claude-in-china)**：1 对 1 远程配齐**美国独享静态住宅 IP + 专属国际企业域名邮箱 + 本机深度清痕与防关联配置**，**6 个月内官方封号全额退部署费**（直接加微信：**`cjdb2026`**，备注 `Claude`）。
 
-## 联系
+## 2. 抄级对标（内容采集与整理工具链）
 
-微信：cjdb2026
+给内容研究者和自媒体团队做的一套多平台内容采集工具。
 
-有共性问题开 Issue，答一次后面的人都能看到。涉及账号和支付的细节走微信，别贴在公开区。
+浏览器插件支持手动采集小红书和抖音的搜索结果、作品正文、高赞评论与作者主页信息，一键同步进 Notion、飞书多维表格或导出本地 Markdown / CSV；不做后台暴力轮询，保护账号安全。配套管理端支持统一跟进多平台对标账号更新。
+
+- 开源仓库：[浏览器采集插件（cjdb-web-crawler）](https://github.com/ChaoJiDuiBiao/cjdb-web-crawler) · [采集与管理端（cjdb-collectors）](https://github.com/ChaoJiDuiBiao/cjdb-collectors)
+
+## 联系我
+
+- **微信**：**`cjdb2026`**
+- 通用技术问题可以直接在对应仓库提 Issue；涉及 Claude 本机环境部署咨询、企业多账号配置或个人隐私细节，请直接加微信沟通。
